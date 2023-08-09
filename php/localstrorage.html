@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        let para = document.getElementById("para")
+        const input  = prompt("Enter your name: ");
+        localStorage.setItem("username",`${input}`); // set the value of key and value through setItem function
+        let result = localStorage.getItem("username"); // it takes or get the key of the key value pair
+
+        //let remove = localStorage.removeItem("username");
+        para.textContent = result
+    </script>
+</body>
+</html>
